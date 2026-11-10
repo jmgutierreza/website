@@ -338,6 +338,8 @@
   .paper-fig { padding: 1.2rem; }
   .paper-fig img { max-width: 440px; max-height: 300px; width: 100%; object-fit: contain; margin: 0 auto; }
   .paper-fig .chart-title { margin-bottom: .8rem; }
+  .paper-card:has(.paper-fig-wide) { grid-template-columns: 1fr 1.35fr; }
+  .paper-fig-wide img { max-width: 100%; max-height: none; }
 
   @media (max-width: 900px) {
     .paper-card, .paper-card:has(.paper-fig) { grid-template-columns: 1fr; gap: 1.5rem; }
@@ -680,9 +682,9 @@
     <p style="font-size:.78rem;color:var(--stone);margin:0 0 1rem;line-height:1.6;"><strong style="font-weight:500;color:var(--ink);">Presented at:</strong> LACEA–LAMES 2026 (Lima) · BREAD/ITAM/CAF 2026 (Mexico City) · RES 2026 (Newcastle) · IWAEE 2026 (Catanzaro) · NWSSDTP PhD Conference 2026 (Liverpool)</p>
     <span class="paper-readmore" style="color:var(--stone);border-bottom-color:var(--line);cursor:default;">Draft available upon request</span>
   </div>
-  <div class="paper-right paper-fig">
+  <div class="paper-right paper-fig paper-fig-wide">
     <p class="chart-title">Repetition and dropout, years after the Grade 2 test</p>
-    <img src="rank_repetition_dropout.png" alt="Effect of Grade 2 class rank on repetition and dropout over time" loading="lazy" style="width:100%;height:auto;display:block;background:#fff;border-radius:2px;max-width:100%;">
+    <a href="rank_repetition_dropout.png" target="_blank" title="Open full size"><img src="rank_repetition_dropout.png" alt="Effect of Grade 2 class rank on repetition and dropout over time" loading="lazy" style="width:100%;height:auto;display:block;background:#fff;border-radius:2px;max-width:100%;"></a>
     <p style="font-size:.72rem;color:var(--stone);margin:.6rem 0 0;line-height:1.5;">Note: Each point is the estimated effect (pp) of Grade 2 class rank on repetition and dropout in each year after the Grade 2 test, from separate regressions using average, maths and reading rank. All specifications condition on test scores and include classroom fixed effects. Bars show 95% confidence intervals; standard errors clustered by school. Sample 1.</p>
   </div>
 </div>
